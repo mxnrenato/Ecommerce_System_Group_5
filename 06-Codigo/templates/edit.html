@@ -1,0 +1,29 @@
+<!-- edit.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modificar Compras</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="title">Modificar Compra</h1>
+    <form method="POST" action="/edit_product/{{ product._id }}" class="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="{{ product.nombre }}" required><br>
+
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" value="{{ product.codigo }}" required><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" value="{{ product.precio }}" required><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="{{ product.cantidad }}" required><br>
+
+        <label for="vendedor">Vendedor:</label>
+        <input type="text" id="vendedor" name="vendedor" value="{{ product.vendedor }}" required><br>
+
+        <input type="submit" value="Guardar cambios" class="submit-button">
+    </form>
+</body>
+</html>
