@@ -1,0 +1,37 @@
+/* AbstractPage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #9731ac;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #b23ec9;
+    font-size: 16px;
+  }
+  
